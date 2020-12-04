@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700i&display=swap');
+body{
+  font-family: 'Nunito', sans-serif;
+  overflow: hidden;
+}
+.index{
+  background: linear-gradient(to right, #15AABF, #B3E3EA);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.left{
+  color:#fff;
+}
+
+.index .fa-accusoft
+{
+  font-size: 100px;
+  display: inline-block;
+}
+
+.index .brand-name,.index .loginMsg
+{
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.index .loginMsg{
+  margin-top: 50px;
+}
+
+.index .joinBtn, .index .loginBtn
+{
+  border-radius: 1.2rem;
+  display: block;
+  margin-top: 2em;
+  padding: .5em;
+  font-family: 'Nunito', sans-serif;
+}
+
+.index .right
+{
+  text-align: center;
+}
+
+.index .loginMsg
+{
+  color: #fff;
+}
+
+.index form{
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  text-align: left;
+  color: #fff;
+
+}
+
+.index form input{
+  border-radius: 1.2rem;
+  padding: .5em 1em;
+}
+
+.index .loginBtn{
+  padding: .5em 2em;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #15AABF;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  display: block;
+  transition: .5s all;
+  margin: .2em;
+}
+
+.sidenav a:hover {
+  padding-left: 25px;
+  font-size: 1.1rem;
+}
+
+.sidenav a i{
+  font-size: 1.4rem;
+  margin-right: 1em;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 190px; /* Same as the width of the sidenav */
+  padding: 0;
+  
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.logo
+{
+  display: block;
+  padding: 0 1.4em;
+  margin-bottom: 2em;
+}
+
+.logo span{
+  font-size: 25px;
+  font-weight: normal;
+  color: #fff;
+  display: block;
+}
+
+.logo i{
+  font-size: 2.2rem;
+  color: #fff;
+  display: inline-block;
+  margin-right: .5em;
+}
+
+.main .header
+{
+  position: fixed;
+  height: 80px;
+  width: calc(100% - 200px);
+  padding: .4em 1.2em;
+  background: #fff;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-left
+{
+  width: 50%;
+  display: inline-block;
+}
+
+.header-right
+{
+  text-align: right;
+  width: 50%;
+  display: inline-block;
+  line-height: 80px;
+}
+
+.header-right .fa-user, .header-right .fa-bell
+{
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  color: #15AABF;
+  border: 1px solid #15AABF;
+  padding: .5em .4em;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 30px;
+}
+.header-right .fa-bell
+{
+  margin-left: 30px;
+}
+.main .header form{
+  width: 100%;
+}
+
+.main .header form i{
+
+    color: #15AABF;
+}
+
+.main .header form input{
+  height: 70px;
+  width: 80%;
+  border: none;
+  outline: 0;
+  text-indent: 14px;
+  color: #aaa;
+}
+
+.main .content
+{
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-left: 1.2em;
+  color: #999;
+  overflow-y: scroll;
+  height: 720px;
+  max-height: 720px;
+}
+
+.main .content::-webkit-scrollbar
+{
+  width: 5px;
+}
+
+/* Track */
+.main .content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.main .content::-webkit-scrollbar-thumb {
+  background: #15AABF;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.main .content::-webkit-scrollbar-thumb:hover {
+  background: rgb(14, 126, 141);; 
+}
+
+.main .content .tasks
+{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.main .content .task
+{
+  display: inline-block;
+  background: #fff;
+  padding: .8em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main .content .task h6
+{
+  color: #999;
+  font-size: 12px;
+}
+
+.task-opt
+{
+  text-align: right;
+}
+
+.main .content .task a
+{
+  color: #999;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.main .content .task h4,
+.main .content .task p{
+  color: #000;
+}
+
+.main .content .addTaskBtn
+{
+  color: #15AABF;
+  display: inline-block;
+  border: none;
+  background: transparent;
+}
+
+.main .content .addTaskBtn i {
+  margin-right: 6px;
+  outline: 0;
+}
